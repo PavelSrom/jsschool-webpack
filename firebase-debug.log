@@ -1,0 +1,126 @@
+[debug] [2020-12-08T08:43:38.000Z] ----------------------------------------------------------------------
+[debug] [2020-12-08T08:43:38.002Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Pavel\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-12-08T08:43:38.002Z] CLI Version:   8.16.2
+[debug] [2020-12-08T08:43:38.002Z] Platform:      win32
+[debug] [2020-12-08T08:43:38.002Z] Node Version:  v12.13.1
+[debug] [2020-12-08T08:43:38.003Z] Time:          Tue Dec 08 2020 09:43:38 GMT+0100 (Central European Standard Time)
+[debug] [2020-12-08T08:43:38.003Z] ----------------------------------------------------------------------
+[debug] [2020-12-08T08:43:38.004Z] 
+[debug] [2020-12-08T08:43:38.005Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2020-12-08T08:43:38.025Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-08T08:43:38.026Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Pavel\Desktop\jsschool-webpack
+
+[debug] [2020-12-08T08:43:38.603Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2020-12-08T08:43:38.603Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2020-12-08T08:43:53.330Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-12-08T08:43:53.331Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-12-08T08:43:53.497Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Tue, 08 Dec 2020 08:43:52 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-08T08:43:53.507Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"jsschool-webpack","name":"jsschool-webpack"}
+[debug] [2020-12-08T08:43:54.530Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 08 Dec 2020 08:43:53 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=894","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-08T08:43:54.535Z] > refreshing access token with scopes: []
+[debug] [2020-12-08T08:43:54.535Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-12-08T08:43:54.733Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 08 Dec 2020 08:43:53 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-08T08:43:54.743Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5109755349379304799 [none]
+[debug] [2020-12-08T08:43:55.677Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5109755349379304799 200
+[debug] [2020-12-08T08:43:55.677Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5109755349379304799 {"name":"operations/cp.5109755349379304799"}
+[debug] [2020-12-08T08:43:56.178Z] [Project Creation Poller] Retrying task index 0
+[debug] [2020-12-08T08:43:56.178Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5109755349379304799 [none]
+[debug] [2020-12-08T08:43:57.153Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5109755349379304799 200
+[debug] [2020-12-08T08:43:57.154Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5109755349379304799 {"name":"operations/cp.5109755349379304799","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2020-12-08T08:43:58.157Z] [Project Creation Poller] Retrying task index 0
+[debug] [2020-12-08T08:43:58.157Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5109755349379304799 [none]
+[debug] [2020-12-08T08:43:59.071Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5109755349379304799 200
+[debug] [2020-12-08T08:43:59.071Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5109755349379304799 {"name":"operations/cp.5109755349379304799","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"796346351572","projectId":"jsschool-webpack","lifecycleState":"ACTIVE","name":"jsschool-webpack","createTime":"2020-12-08T08:43:52.950Z"}}
+[debug] [2020-12-08T08:43:59.074Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-12-08T08:43:59.074Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-12-08T08:43:59.191Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 08 Dec 2020 08:43:57 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-08T08:43:59.203Z] >>> HTTP REQUEST POST https://firebase.googleapis.com/v1beta1/projects/jsschool-webpack:addFirebase  
+ 
+[debug] [2020-12-08T08:44:02.366Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 08 Dec 2020 08:44:00 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-08T08:44:02.366Z] > refreshing access token with scopes: []
+[debug] [2020-12-08T08:44:02.366Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-12-08T08:44:02.499Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 08 Dec 2020 08:44:01 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-08T08:44:02.513Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGY2NzMxMDItZWY3NS00ZDk2LWEyZTUtN2Y0NjI1ZTFiYWY3 [none]
+[debug] [2020-12-08T08:44:03.312Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGY2NzMxMDItZWY3NS00ZDk2LWEyZTUtN2Y0NjI1ZTFiYWY3 200
+[debug] [2020-12-08T08:44:03.312Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGY2NzMxMDItZWY3NS00ZDk2LWEyZTUtN2Y0NjI1ZTFiYWY3 {"name":"operations/workflows/ZGY2NzMxMDItZWY3NS00ZDk2LWEyZTUtN2Y0NjI1ZTFiYWY3"}
+[debug] [2020-12-08T08:44:03.815Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2020-12-08T08:44:03.815Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGY2NzMxMDItZWY3NS00ZDk2LWEyZTUtN2Y0NjI1ZTFiYWY3 [none]
+[debug] [2020-12-08T08:44:04.609Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGY2NzMxMDItZWY3NS00ZDk2LWEyZTUtN2Y0NjI1ZTFiYWY3 200
+[debug] [2020-12-08T08:44:04.609Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGY2NzMxMDItZWY3NS00ZDk2LWEyZTUtN2Y0NjI1ZTFiYWY3 {"name":"operations/workflows/ZGY2NzMxMDItZWY3NS00ZDk2LWEyZTUtN2Y0NjI1ZTFiYWY3"}
+[debug] [2020-12-08T08:44:05.613Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2020-12-08T08:44:05.614Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGY2NzMxMDItZWY3NS00ZDk2LWEyZTUtN2Y0NjI1ZTFiYWY3 [none]
+[debug] [2020-12-08T08:44:06.177Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGY2NzMxMDItZWY3NS00ZDk2LWEyZTUtN2Y0NjI1ZTFiYWY3 200
+[debug] [2020-12-08T08:44:06.177Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGY2NzMxMDItZWY3NS00ZDk2LWEyZTUtN2Y0NjI1ZTFiYWY3 {"name":"operations/workflows/ZGY2NzMxMDItZWY3NS00ZDk2LWEyZTUtN2Y0NjI1ZTFiYWY3"}
+[debug] [2020-12-08T08:44:08.179Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2020-12-08T08:44:08.179Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGY2NzMxMDItZWY3NS00ZDk2LWEyZTUtN2Y0NjI1ZTFiYWY3 [none]
+[debug] [2020-12-08T08:44:09.004Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGY2NzMxMDItZWY3NS00ZDk2LWEyZTUtN2Y0NjI1ZTFiYWY3 200
+[debug] [2020-12-08T08:44:09.004Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGY2NzMxMDItZWY3NS00ZDk2LWEyZTUtN2Y0NjI1ZTFiYWY3 {"name":"operations/workflows/ZGY2NzMxMDItZWY3NS00ZDk2LWEyZTUtN2Y0NjI1ZTFiYWY3"}
+[debug] [2020-12-08T08:44:13.007Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2020-12-08T08:44:13.007Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGY2NzMxMDItZWY3NS00ZDk2LWEyZTUtN2Y0NjI1ZTFiYWY3 [none]
+[debug] [2020-12-08T08:44:13.629Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGY2NzMxMDItZWY3NS00ZDk2LWEyZTUtN2Y0NjI1ZTFiYWY3 200
+[debug] [2020-12-08T08:44:13.629Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGY2NzMxMDItZWY3NS00ZDk2LWEyZTUtN2Y0NjI1ZTFiYWY3 {"name":"operations/workflows/ZGY2NzMxMDItZWY3NS00ZDk2LWEyZTUtN2Y0NjI1ZTFiYWY3","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"jsschool-webpack","projectNumber":"796346351572","displayName":"jsschool-webpack","name":"projects/jsschool-webpack","resources":{"hostingSite":"jsschool-webpack"}}}
+[info] 
+[info] === Your Firebase project is ready! ===
+[info] 
+[info] Project information:
+[info]    - Project ID: jsschool-webpack
+[info]    - Project Name: jsschool-webpack
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/jsschool-webpack/overview
+[info] i  Using project jsschool-webpack (jsschool-webpack) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2020-12-08T08:44:28.334Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+ 
+[debug] [2020-12-08T08:44:28.389Z] <<< HTTP RESPONSE 200 {"accept-ranges":"bytes","vary":"Accept-Encoding, Origin","content-type":"application/json","cross-origin-resource-policy":"cross-origin","content-length":"1411","date":"Tue, 08 Dec 2020 08:44:27 GMT","expires":"Tue, 08 Dec 2020 09:34:27 GMT","cache-control":"public, max-age=3000","last-modified":"Fri, 04 Dec 2020 02:12:08 GMT","x-content-type-options":"nosniff","server":"sffe","x-xss-protection":"0","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""}
+[info] i  Skipping write of build/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\Pavel\Desktop\jsschool-webpack 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=877073620&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2020-12-08T08:44:55.516Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"76d378ee598545d7e549","redirect_uri":"http://localhost:9005","state":"877073620"}
+[debug] [2020-12-08T08:44:56.004Z] <<< HTTP RESPONSE 200 {"date":"Tue, 08 Dec 2020 08:44:54 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","server":"GitHub.com","status":"200 OK","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"W/\"41760b43565bae1f6bdc463d4f26fda6\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker.js gist.github.com/socket-worker.js","x-github-request-id":"DFAA:6FEB:9B222F:D6B287:5FCF3D06"}
+[debug] [2020-12-08T08:44:56.004Z] >>> HTTP REQUEST GET https://api.github.com/user  
+ 
+[debug] [2020-12-08T08:44:56.264Z] <<< HTTP RESPONSE 200 {"date":"Tue, 08 Dec 2020 08:44:54 GMT","content-type":"application/json; charset=utf-8","content-length":"1501","server":"GitHub.com","status":"200 OK","cache-control":"private, max-age=60, s-maxage=60","vary":"Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"\"08fec91f9a54178df17367d304c6abe327136c50ffc7684f37b3c0e25f9d900f\"","last-modified":"Tue, 08 Dec 2020 08:44:53 GMT","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4993","x-ratelimit-reset":"1607419065","x-ratelimit-used":"7","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","x-github-request-id":"DFAE:0B11:64021B2:71AE230:5FCF3D06"}
+[info] 
+[info] +  Success! Logged into GitHub as PavelSrom 
+[info] 
+[debug] [2020-12-08T08:45:17.310Z] >>> HTTP REQUEST GET https://api.github.com/repos//actions/secrets/public-key?type=owner  
+ 
+[debug] [2020-12-08T08:45:17.490Z] <<< HTTP RESPONSE 404 {"date":"Tue, 08 Dec 2020 08:45:16 GMT","content-type":"application/json; charset=utf-8","content-length":"74","server":"GitHub.com","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4992","x-ratelimit-reset":"1607419065","x-ratelimit-used":"8","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"DFB5:FC3A:BA4D61E:D45587A:5FCF3D1B"}
+[debug] [2020-12-08T08:45:17.490Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
